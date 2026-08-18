@@ -1,0 +1,294 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lusofonia Press</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f8f6f1;
+            color: #252525;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #1f2933;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(
+                rgba(248,246,241,0.94),
+                rgba(248,246,241,0.94)
+            );
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1f2933;
+            color: white;
+            padding: 13px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        .button:hover {
+            background: #374151;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 45px;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .book {
+            background: white;
+            padding: 30px;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+        }
+
+        .book-cover {
+            height: 250px;
+            background: #e8e3d8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        .book h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #ebe7df;
+        }
+
+        footer {
+            background: #1f2933;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                text-align: center;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LUSOFONIA PRESS</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#livros">Livros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <h1>Lusofonia Press</h1>
+
+        <p>
+            Pensamento, memória, cultura e conhecimento
+            em diálogo com o mundo lusófono.
+        </p>
+
+        <a href="#livros" class="button">Conheça os nossos livros</a>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2 class="section-title">Sobre a Lusofonia Press</h2>
+
+    <div class="about">
+        <p>
+            A Lusofonia Press é uma iniciativa editorial dedicada à
+            publicação e divulgação de obras académicas, científicas,
+            filosóficas, culturais e literárias.
+        </p>
+
+        <br>
+
+        <p>
+            A nossa missão é promover o conhecimento, preservar a memória
+            e criar pontes entre autores, investigadores e leitores,
+            especialmente no espaço lusófono.
+        </p>
+    </div>
+</section>
+
+<section id="livros">
+    <h2 class="section-title">Publicações</h2>
+
+    <div class="books">
+
+        <div class="book">
+            <div class="book-cover">
+                CAPA DO LIVRO
+            </div>
+
+            <h3>Entre a Memória e o Legado</h3>
+
+            <p>
+                Quatro vidas, quatro tempos e a identidade
+                da Igreja em Timor-Leste.
+            </p>
+        </div>
+
+        <div class="book">
+            <div class="book-cover">
+                CAPA DO LIVRO
+            </div>
+
+            <h3>A Ética do Sofrimento, da Memória e da Esperança</h3>
+
+            <p>
+                Reflexões sobre memória, ética e reconstrução
+                moral de Timor-Leste.
+            </p>
+        </div>
+
+        <div class="book">
+            <div class="book-cover">
+                CAPA DO LIVRO
+            </div>
+
+            <h3>Novas Publicações</h3>
+
+            <p>
+                Em breve apresentaremos novas obras
+                da Lusofonia Press.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contacto">
+    <h2 class="section-title">Contacto</h2>
+
+    <p>
+        Lusofonia Press
+    </p>
+
+    <p>
+        Timor-Leste
+    </p>
+
+    <br>
+
+    <p>
+        Para informações sobre publicações, autores e propostas
+        editoriais, entre em contacto connosco.
+    </p>
+</section>
+
+<footer>
+    © 2026 Lusofonia Press — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
