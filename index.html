@@ -1,259 +1,94 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta name="google-site-verification" content="h7-r1P259Ck2vC-iDj3JSYporTLNwNGRi6HUBvNvMc0" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lusofonia Press</title>
+    <!-- BOOK: ADVANCED NEUROLOGICAL NURSING CARE -->
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <div class="book">
 
-        body {
-            font-family: Georgia, "Times New Roman", serif;
-            background: #f8f6f1;
-            color: #252525;
-            line-height: 1.7;
-        }
+        <div class="book-cover">
+            <div style="padding: 20px; text-align: center;">
 
-        header {
-            background: #1f2933;
-            color: white;
-            padding: 25px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+                <p style="
+                    font-family: Arial, sans-serif;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    margin-bottom: 22px;
+                    color: #555;
+                ">
+                    LUSOFONIA PRESS
+                </p>
 
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+                <h2 style="
+                    font-family: Georgia, 'Times New Roman', serif;
+                    font-size: 25px;
+                    line-height: 1.35;
+                    margin-bottom: 18px;
+                ">
+                    ADVANCED NEUROLOGICAL NURSING CARE
+                </h2>
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-family: Arial, sans-serif;
-            font-size: 15px;
-        }
+                <p style="
+                    font-size: 14px;
+                    line-height: 1.5;
+                    font-style: italic;
+                ">
+                    A Critical Analysis of Acute Stroke Management:
+                    Cerebral Edema Management and Neuromonitoring
+                    in the Context of Healthcare Delivery in Timor-Leste
+                </p>
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+                <p style="
+                    font-family: Arial, sans-serif;
+                    font-size: 12px;
+                    margin-top: 28px;
+                    letter-spacing: 1px;
+                ">
+                    FIRST EDITION · 2026
+                </p>
 
-        .hero {
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(
-                rgba(248,246,241,0.94),
-                rgba(248,246,241,0.94)
-            );
-        }
-
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .hero h1 {
-            font-size: 58px;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-
-        .hero p {
-            font-size: 21px;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #1f2933;
-            color: white;
-            padding: 13px 28px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-family: Arial, sans-serif;
-            transition: 0.2s;
-        }
-
-        .button:hover {
-            background: #374151;
-        }
-
-        section {
-            padding: 70px 8%;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 45px;
-        }
-
-        .about {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .books {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .book {
-            background: white;
-            padding: 25px;
-            border: 1px solid #ddd;
-            text-align: center;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .book:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.10);
-        }
-
-        .book-cover {
-            height: 330px;
-            background: #e8e3d8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 22px;
-            overflow: hidden;
-        }
-
-        .book-cover img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-        }
-
-        .book h3 {
-            font-size: 21px;
-            margin-bottom: 10px;
-        }
-
-        .book p {
-            margin-bottom: 18px;
-        }
-
-        .book-language {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 18px;
-        }
-
-        .book-button {
-            display: inline-block;
-            background: #1f2933;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
-
-        .book-button:hover {
-            background: #374151;
-        }
-
-        .contact {
-            text-align: center;
-            background: #ebe7df;
-        }
-
-        footer {
-            background: #1f2933;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
-
-        @media (max-width: 700px) {
-
-            header {
-                text-align: center;
-                justify-content: center;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 8px;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
-
-            .book-cover {
-                height: 360px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-   <h3>Reimagining Community Health Systems for Equity and Resilient Population Health Care</h3>
-
-            <p>
-                Rethinking community health systems to advance equity,
-                resilience and inclusive population health care.
-            </p>
-
-            <div class="book-language">
-                Language: English
             </div>
+        </div>
+
+        <h3>ADVANCED NEUROLOGICAL NURSING CARE</h3>
+
+        <p style="font-style: italic;">
+            A Critical Analysis of Acute Stroke Management:
+            Cerebral Edema Management and Neuromonitoring
+            in the Context of Healthcare Delivery in Timor-Leste
+        </p>
+
+        <div class="book-language">
+            Language: English
+        </div>
+
+        <div style="
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.8;
+            overflow-wrap: anywhere;
+            margin-bottom: 20px;
+        ">
+            <p><strong>Authors:</strong></p>
+
+            <p>Adelaide Edina Almeida da Costa, Lic.Enf.</p>
+            <p>Dr. Ns. Priyanto, M.Kep., M.B.</p>
+            <p>Irenia dos Anjos, S.Kep., Ns.</p>
+
+            <p><strong>Publisher:</strong> Lusofonia Press</p>
+            <p><strong>Year:</strong> 2026</p>
+            <p><strong>Edition:</strong> First Edition</p>
+        </div>
+
+        <a
+            href="https://doi.org/10.68609/advanced-neurological-nursing-care-2026"
+            class="book-button"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Permanent DOI Link
+        </a>
+
+        <div style="margin-top: 12px;">
 
             <a
-                href="REIMAGINING%20COMMUNITY%20HEALTH%20SYSTEMS.pdf"
-                class="book-button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View / Read book
-            </a>  <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 10px;">
-
-            <a
-                href="https://doi.org/10.68609/reimagining-community-health-systems-2026"
-                class="book-button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Permanent DOI Link
-            </a>
-
-            <a
-                href="https://drive.google.com/file/d/1DJtbyXKodRx619Rro1-t6vpaSsowVBk2/view?usp=sharing"
+                href="GANTI_DENGAN_PAUTAN_PDF_BUKU_INI"
                 class="book-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -262,404 +97,5 @@
             </a>
 
         </div>
-        </div>
-    <div class="logo">LUSOFONIA PRESS</div>
-
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#livros">Livros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
-
-
-<section class="hero" id="inicio">
-
-    <div class="hero-content">
-
-        <h1>Lusofonia Press</h1>
-
-        <p>
-            Pensamento, memória, cultura e conhecimento
-            em diálogo com o mundo lusófono.
-        </p>
-
-        <a href="#livros" class="button">
-            Conheça os nossos livros
-        </a>
 
     </div>
-
-</section>
-
-
-<section id="sobre">
-
-    <h2 class="section-title">
-        Sobre a Lusofonia Press
-    </h2>
-
-    <div class="about">
-
-        <p>
-            A Lusofonia Press é uma iniciativa editorial dedicada à
-            publicação e divulgação de obras académicas, científicas,
-            filosóficas, culturais e literárias.
-        </p>
-
-        <br>
-
-        <p>
-            A nossa missão é promover o conhecimento, preservar a memória
-            e criar pontes entre autores, investigadores e leitores,
-            especialmente no espaço lusófono.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="livros">
-
-    <h2 class="section-title">
-        Publicações
-    </h2>
-
-    <div class="books">
-
-
-        <!-- LIVRO 1 -->
-
-        <div class="book">
-
-            <div class="book-cover">
-
-                <img
-                    src="FOLHA%20DO%20ROSTO.png"
-                    alt="Entre a Memória e o Legado"
-                >
-
-            </div>
-
-            <h3>
-                Entre a Memória e o Legado
-            </h3>
-
-            <p>
-                Quatro vidas, quatro tempos e a identidade
-                da Igreja em Timor-Leste.
-            </p>
-
-            <div class="book-language">
-                Idioma: Português
-            </div>
-
-            <a
-                href="LIVRO%20ENTRE%20MEMORIA%20E%20LEGADO.pdf"
-                class="book-button"
-                target="_blank"
-            >
-                Ver / Ler livro
-            </a>
-
-        </div>
-
-
-        <!-- LIVRO 2 -->
-
-        <div class="book">
-
-            <div class="book-cover">
-
-                <img
-                    src="FOLHA%20DO%20ROSTO.png"
-                    alt="Antara Memori dan Warisan"
-                >
-
-            </div>
-
-            <h3>
-                Antara Memori dan Warisan
-            </h3>
-
-            <p>
-                Empat kehidupan, empat zaman dan identitas
-                Gereja di Timor-Leste.
-            </p>
-
-            <div class="book-language">
-                Idioma: Bahasa Indonesia
-            </div>
-
-            <a
-                href="ANTARA%20MEMORI%20DAN%20WARISAN.pdf"
-                class="book-button"
-                target="_blank"
-            >
-                Ver / Ler livro
-            </a>
-
-        </div>
-
-
-        <!-- LIVRO 3 -->
-
-        <div class="book">
-
-            <div class="book-cover">
-
-                <img
-                    src="FOLHA%20DO%20ROSTO.png"
-                    alt="A Ética do Sofrimento, da Memória e da Esperança"
-                >
-
-            </div>
-
-            <h3>
-                A Ética do Sofrimento,
-                da Memória e da Esperança
-            </h3>
-
-            <p>
-                Reflexões sobre memória, ética e reconstrução
-                moral de Timor-Leste.
-            </p>
-
-            <div class="book-language">
-                Idioma: Português
-            </div>
-
-            <a
-                href="ETIKA%20PENDERITAAN%2C%20MEMORI%20DAN%20HARAPAN%20%E2%80%93%20KAY%20RALA%20XANANA.pdf"
-                class="book-button"
-                target="_blank"
-            >
-                Ver / Ler livro
-            </a>
-
-        </div>
-
-
-        <!-- LIVRO 4 -->
-
-        <div class="book">
-
-            <div class="book-cover">
-
-                <img
-                    src="FOLHA%20DO%20ROSTO.png"
-                    alt="The Ethics of Suffering, Memory, and Hope"
-                >
-
-            </div>
-
-            <h3>
-                The Ethics of Suffering,
-                Memory, and Hope
-            </h3>
-
-            <p>
-                Reflections on memory, ethics and the moral
-                reconstruction of Timor-Leste.
-            </p>
-
-            <div class="book-language">
-                Language: English
-            </div>
-
-            <a
-                href="THE%20ETHICS%20OF%20SUFFERING%2C%20MEMORY%2C%20AND%20HOPE%20%E2%80%93%20KAY%20RALA%20XANANA.pdf"
-                class="book-button"
-                target="_blank"
-            >
-                View / Read book
-            </a>
-   <!-- LIVRO 5: REIMAGINING COMMUNITY HEALTH SYSTEMS -->
-
-        <div class="book">
-
-            <div class="book-cover">
-                <div style="padding: 20px; text-align: center;">
-                    <p style="
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                        letter-spacing: 2px;
-                        margin-bottom: 22px;
-                        color: #555;
-                    ">
-                        LUSOFONIA PRESS
-                    </p>
-
-                    <h2 style="
-                        font-family: Georgia, 'Times New Roman', serif;
-                        font-size: 25px;
-                        line-height: 1.35;
-                        margin-bottom: 18px;
-                    ">
-                        REIMAGINING COMMUNITY HEALTH SYSTEMS
-                    </h2>
-
-                    <p style="
-                        font-size: 15px;
-                        line-height: 1.5;
-                        font-style: italic;
-                    ">
-                        For Equity and Resilient Population Health Care
-                    </p>
-
-                    <p style="
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                        margin-top: 28px;
-                        letter-spacing: 1px;
-                    ">
-                        FIRST EDITION · 2026
-                    </p>
-                </div>
-            </div>
-
-            <h3>
-                Reimagining Community Health Systems for Equity and Resilient Population Health Care
-            </h3>
-
-            <p style="font-style: italic;">
-                A Timor-Leste Perspective on Community, Dignity,
-                Resilience, and the Future of Health
-            </p>
-
-            <div class="book-language">
-                Language: English
-            </div>
-
-            <div style="
-                text-align: left;
-                font-size: 14px;
-                line-height: 1.8;
-                overflow-wrap: anywhere;
-                margin-bottom: 20px;
-            ">
-                <p><strong>Authors:</strong></p>
-
-                <p>
-                    Lindalva Zelita Ornai<br>
-                    <a href="mailto:lindalvazelitaornai@gmail.com">
-                        lindalvazelitaornai@gmail.com
-                    </a>
-                </p>
-
-                <p>
-                    Eko Mardiyaningsih<br>
-                    <a href="mailto:ekomardiyaningsih@unw.ac.id">
-                        ekomardiyaningsih@unw.ac.id
-                    </a>
-                </p>
-
-                <p>
-                    Priyanto<br>
-                    <a href="mailto:priyanto@unw.ac.id">
-                        priyanto@unw.ac.id
-                    </a>
-                </p>
-
-                <p>
-                    Martinho Borromeu<br>
-                    <a href="mailto:martinho.boromeu@untl.edu.tl">
-                        martinho.boromeu@untl.edu.tl
-                    </a>
-                </p>
-
-                <hr style="margin: 16px 0; border: 0; border-top: 1px solid #ddd;">
-
-                <p><strong>Publisher:</strong> Lusofonia Press</p>
-                <p><strong>Place of publication:</strong> Brazil</p>
-                <p><strong>Year:</strong> 2026</p>
-                <p><strong>Edition:</strong> First Edition</p>
-                <p><strong>ISBN:</strong>
-                    <a href="https://www.cblservicos.org.br/servicos/meus-livros/visualizar/?id=3cccee33-7492-f111-8077-002248de81a4"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        978-65-977074-7-8
-                    </a>
-                </p>
-                <p><strong>Format:</strong> Print Edition</p>
-                <p><strong>Dimensions:</strong> 14.5 × 20.5 cm</p>
-                <p><strong>Pages:</strong> 139</p>
-            </div>
-
-            <a
-                href="REIMAGINING%20COMMUNITY%20HEALTH%20SYSTEMS.pdf"
-                class="book-button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View / Read Book
-            </a>
-
-        </div>
-<!-- LIVRO 6: MATERNAL AND CHILD HEALTH AND WELL-BEING -->
-
-        <div class="book">
-
-            <div class="book-cover">
-                <div style="padding: 20px; text-align: center;">
-                    <p style="
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                        letter-spacing: 2px;
-                        margin-bottom: 22px;
-                        color: #555;
-                    ">
-                        LUSOFONIA PRESS
-                    </p>
-
-                    <h2 style="
-                        font-family: Georgia, 'Times New Roman', serif;
-                        font-size: 25px;
-                        line-height: 1.35;
-                        margin-bottom: 18px;
-                    ">
-                        MATERNAL AND CHILD HEALTH AND WELL-BEING
-                    </h2>
-
-                    <p style="
-                        font-size: 15px;
-                        line-height: 1.5;
-                        font-style: italic;
-                    ">
-                        Promoting Maternal and Child Health and Well-Being
-                    </p>
-
-                    <p style="
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                        margin-top: 28px;
-                        letter-spacing: 1px;
-                    ">
-                        2026
-                    </p>
-                </div>
-            </div>
-
-            <h3>Maternal and Child Health and Well-Being</h3>
-
-            <p>
-                Academic reflections on maternal health, child health,
-                well-being, and the promotion of healthier communities.
-            </p>
-
-            <div class="book-language">
-                Language: English
-            </div>
-
-            <a
-                href="MATERNAL%20AND%20CHILD%20HEALTH%20AND%20WELL-BEING.pdf"
-                class="book-button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View / Read Book
-            </a>
-
-        </div>
